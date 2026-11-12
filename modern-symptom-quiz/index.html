@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A lighthearted quiz about modern life habits." />
+    <title>Modern Symptoms · Question 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="quiz-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="Back to quiz home"><span class="brand-dot"></span>MODERN<br />SYMPTOMS</a>
+        <p>A LIGHTHEARTED QUIZ <span>01 / 06</span></p>
+      </header>
+
+      <section class="quiz-card" id="top" aria-labelledby="question-title">
+        <div class="meter" aria-label="Progress: question 1 of 6"><span></span></div>
+        <div class="question-meta"><span>QUESTION 01</span><span>⌇ PROCRASTINATION INDEX</span></div>
+        <p class="eyebrow">When a deadline is getting closer…</p>
+        <h1 id="question-title">Your assignment is due<br />tomorrow at 9 AM. <em>It is now…</em></h1>
+
+        <div class="answers" role="group" aria-label="Choose the answer that sounds most like you">
+          <button class="answer" data-result="The planner: your to-do list probably crosses the finish line before your anxiety does.">
+            <span class="answer-key">A</span><span>Already submitted three days ago, with formatting checked.</span><i>↗</i>
+          </button>
+          <button class="answer" data-result="Steady performer: you and deadlines have a healthy, if slightly tense, working relationship.">
+            <span class="answer-key">B</span><span>8 PM tonight, coffee made, ready to begin.</span><i>↗</i>
+          </button>
+          <button class="answer" data-result="Procrastination radar activated: inspiration usually arrives late at night, alongside caffeine.">
+            <span class="answer-key">C</span><span>1 AM, carefully choosing the perfect document title.</span><i>↗</i>
+          </button>
+          <button class="answer" data-result="Time-management magician: achievement unlocked — ‘cosmic burst of focus in the final hour.’">
+            <span class="answer-key">D</span><span>8:42 AM, with 17 browser tabs already open.</span><i>↗</i>
+          </button>
+        </div>
+
+        <div class="result" aria-live="polite" hidden>
+          <span class="result-label">YOUR INSTANT OBSERVATION</span>
+          <p id="result-text"></p>
+          <button class="retry" type="button">CHOOSE AGAIN <span>↻</span></button>
+        </div>
+      </section>
+
+      <footer>
+        <p>This is a humorous lifestyle quiz, not a medical diagnosis.</p>
+        <p class="keyboard-hint">Tip: use <kbd>Tab</kbd> and <kbd>Enter</kbd> to answer</p>
+      </footer>
+    </main>
+    <div class="orb orb-one" aria-hidden="true"></div><div class="orb orb-two" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
