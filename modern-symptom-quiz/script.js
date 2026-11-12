@@ -24,6 +24,29 @@ const additionalQuestions = [
       },
     ],
   },
+  {
+    index: 'DIGITAL DISTRACTION INDEX',
+    eyebrow: 'You pick up your phone to check the time.',
+    prompt: 'What happens next?',
+    answers: [
+      {
+        text: 'I check the time and put it down.',
+        feedback: 'The focused minimalist: your phone has a job, and you keep it on task.',
+      },
+      {
+        text: 'I reply to a few messages first.',
+        feedback: 'The connected multitasker: checking the time comes with a social detour.',
+      },
+      {
+        text: 'I scroll for twenty minutes and forget the time.',
+        feedback: 'The accidental explorer: one quick glance becomes an unexpected journey.',
+      },
+      {
+        text: 'I forget why I picked it up.',
+        feedback: 'The mystery opener: your phone is unlocked, but your mission remains unknown.',
+      },
+    ],
+  },
 ];
 
 const firstQuestion = document.querySelector('.quiz-card');
